@@ -1,0 +1,82 @@
+html, body, #viewDiv {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+#timeSlider {
+  position: absolute;
+  left: 50px;
+  right: 50px;
+  bottom: 20px;
+}
+#toolbarDiv {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  max-height: 80vh;
+  overflow-y: auto;
+}
+#infoDiv {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  max-width: 300px;
+  max-height: 500px;
+  overflow: scroll;
+}
+.btn {
+  padding: 8px 16px;
+  margin: 4px;
+  border: none;
+  border-radius: 4px;
+  background: #0079c1;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+.btn:hover {
+  background: #005e95;
+}
+.btn.active {
+  background: #005e95;
+}
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+.color-box {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+#wardFilter {
+  width: 100%;
+  padding: 8px;
+  margin: 4px 0;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+.stats-table {
+  width: 100%;
+  margin-top: 10px;
+  border-collapse: collapse;
+}
+.stats-table th, .stats-table td {
+  padding: 4px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+.stats-table th {
+  background-color: #f5f5f5;
+}

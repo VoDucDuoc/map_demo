@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Data Form</title>
+<link rel="stylesheet" href="./styles/addData.css">
+</head>
+<body>
+  <div class="container">
+
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date" required>
+
+    <label for="ward">Ward:</label>
+    <select id="wardSelect" name="ward" required>
+      <option value="1">--Select ward below--</option>
+    </select>
+
+    <label for="cases">Cases:</label>
+    <input type="number" id="cases" name="cases" required>
+
+    <label for="active">Active:</label>
+    <input type="number" id="active" name="active" required>
+
+    <label for="recovered">Recovered:</label>
+    <input type="number" id="recovered" name="recovered" required>
+
+    <label for="death">Death:</label>
+    <input type="number" id="death" name="death" required>
+
+
+    <button id="submit">Submit</button>
+
+  </div>
+
+  <script type="module" src="./js/addData.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <title>COVID-19 Quận 1 TP.HCM 2020 - Bản đồ chi tiết</title>
+    <link
+      rel="stylesheet"
+      href="https://js.arcgis.com/4.29/esri/themes/light/main.css"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <div id="viewDiv"></div>
+    <div id="timeSlider"></div>
+    <div id="toolbarDiv">
+      <h3>Thêm dữ liệu</h3>
+      <button id="addDataBtn" class="btn">Thêm dữ liệu</button>
+
+      <h3>Điều khiển</h3>
+      <button id="pointsBtn" class="btn">Hiển thị điểm</button>
+      <button id="polygonBtn" class="btn active">Hiển thị phường</button>
+      <h3>Lọc theo phường</h3>
+      <select id="wardFilter">
+        <option value="all">Tất cả các phường</option>
+      </select>
+      <div id="legendDiv">
+        <h3>Chú thích</h3>
+        <div class="legend-content"></div>
+      </div>
+    </div>
+    <div id="infoDiv">
+      <h2>COVID-19 Quận 1 TP.HCM 2020</h2>
+      <div id="stats"></div>
+      <table class="stats-table">
+        <tr>
+          <th>Phường</th>
+          <th>Ca nhiễm</th>
+          <th>Đang điều trị</th>
+        </tr>
+      </table>
+    </div>
+
+    <script src="https://js.arcgis.com/4.29/"></script>
+    <script
+      type="module"
+      src="https://js.arcgis.com/map-components/4.29/arcgis-map-components.esm.js"
+    ></script>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
