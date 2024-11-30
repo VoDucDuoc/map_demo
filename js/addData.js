@@ -1,6 +1,6 @@
 import points from "../data/points.js";
 
-const pointData = JSON.parse(localStorage.getItem("points")) || points;
+const pointData = JSON.parse(sessionStorage.getItem("points")) || points;
 
 document.addEventListener("DOMContentLoaded", () => {
   const selection = document.getElementById("wardSelect");
@@ -41,7 +41,7 @@ document.getElementById("submit").addEventListener("click", (event) => {
     pointData[newDataIndex].cases.sort(
       (a, b) => new Date(a.date) - new Date(b.date)
     );
-    localStorage.setItem("points", JSON.stringify(pointData));
+    sessionStorage.setItem("points", JSON.stringify(pointData));
     window.location.href = "main.html";
   }
 });

@@ -11,7 +11,7 @@ require([
     startDate: "",
     endDate: "",
   };
-  const pointData = JSON.parse(localStorage.getItem("points")) || points;
+  const pointData = JSON.parse(sessionStorage.getItem("points")) || points;
 
   const districtStats = {};
   pointData.forEach((point) => {
